@@ -1,0 +1,11 @@
+<h1> Your number is <%= @number %></h1>
+<% number = 40.to_s %>
+<% if @number == number %>
+Congratulations, you choose the correct number
+<%end%>
+<% if @number > number %>
+Guess lower
+<%end%>
+<% if @number < number %>
+Guess higher
+<%end%>
